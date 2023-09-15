@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--AOS link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="#">PORTFOLIO</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#Skills">SKILLS</a></li>
+                <li><a href="#services">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <header>
+        
+        <div class="text">
+            <p>Hi, I am</p>
+            <h1>Preethaa Dutta</h1>
+            <p>I am a <span id="ani" style="color: #79155b;"></span></p>
+            <button class="c-btn">Hire Me</button>
+        </div>
+    </header>
+    <section id="about">
+        <div class="section-info" data-aos="fade-right">
+            <h1 class="heading">ABOUT</h1>
+            <p class="strengths">Who I am?</p>
+        </div>
+        <div class="about-row" data-aos="zoom-in-up">
+            <!--<div class="about-left-col">
+                <img src="images/about2.jpg">
+            </div>-->
+            <div class="about-right-col">
+                <p id="p-title">
+                    Hi, Preethaa here, and I'm a <span id="ani3" style="color: #79155b;">
+                </p>
+                <p>
+                    I enjoy creating visually appealing, responsive websites and web apps that are also user-friendly. I'm now working as an intern web developer. With an overall CGPA of 8.81, I graduated from the University of Engineering and Management in Kolkata with a B.Tech. in Electronics and Communication Engineering. In addition, I like to write technical documentation, research papers, and articles that are search engine friendly. I am also working as a part-time tutor under the company MyMegaminds. I love to help people by sharing my knowledge of programming. Hope we'll meet soon!
+                </p>
+                <button class="c-btn">Download CV</button>    
+            </div>
+        </div>
+    </section>
+    <section id="Skills">
+        <div class="section-info" data-aos="fade-left">
+            <h1 style="color: #fff">SKILLS</h1>
+            <p class="strengths">My strengths</p>
+        </div>
+        <div class="skills-row">
+            <div class="skills-left-col" data-aos="fade-up-right">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis voluptatem. Illo eaque nostrum, labore natus rerum aliquam inventore eos iure nam quae enim ut cum fugiat corrupti non aspernatur?
+                </p>
+                <!--<button class="c-btn">Read more</button>-->
+            </div>
+            <div class="skills-right-col" data-aos="fade-up-left">
+                <div class="progress-div">
+                    <p>
+                        <span>HTML, CSS</span><br>
+                        <progress value="95" max="100"></progress>
+                        <span>95%</span>
+                    </p>
+                    <p>
+                        <span>JavaScript</span><br>
+                        <progress value="90" max="100"></progress>
+                        <span>90%</span>
+                    </p>
+                    <p>
+                        <span>Java</span><br>
+                        <progress value="95" max="100"></progress>
+                        <span>95%</span>
+                    </p>
+                    <p>
+                        <span>MySQL</span><br>
+                        <progress value="92" max="100"></progress>
+                        <span>92%</span>
+                    </p>
+                    <p>
+                        <span>Arduino</span><br>
+                        <progress value="80" max="100"></progress>
+                        <span>80%</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="section-info" data-aos="flip-right">
+            <h1 class="heading">PROJECTS</h1>
+            <p>My work samples</p>
+        </div>
+        <!--<div class="services-row">
+            
+            <div class="services-box" data-tilt="">
+                <img src="images/b2.png">
+                <h2>Web Design</h2>
+                <p>
+                    Write something
+                </p>
+            </div>
+            <div class="services-box" data-tilt="">
+                <img src="images/b2.png">
+                <h2>Web Development</h2>
+                <p>
+                    Write something
+                </p>
+            </div>
+            <div class="services-box" data-tilt="">
+                <img src="images/b2.png">
+                <h2>Apps Development</h2>
+                <p>
+                    Write something
+                </p>
+            </div>
+            
+            <div class="card">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="img.png" alt="">
+                    </div>
+                    <div class="contentBx">
+                        <div>
+                            <h2>Post Title</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore placeat alias labore, necessitatibus nisi blanditiis enim illum aperiam dolore et qui similique rerum quasi animi ut quo cum veniam at neque quibusdam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="img.png" alt="">
+                    </div>
+                    <div class="contentBx">
+                        <div>
+                            <h2>Post Title</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore placeat alias labore, necessitatibus nisi blanditiis enim illum aperiam dolore et qui similique rerum quasi animi ut quo cum veniam at neque quibusdam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="img.png" alt="">
+                    </div>
+                    <div class="contentBx">
+                        <div>
+                            <h2>Post Title</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore placeat alias labore, necessitatibus nisi blanditiis enim illum aperiam dolore et qui similique rerum quasi animi ut quo cum veniam at neque quibusdam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>-->
+        <div class="projects" data-aos="flip-up">
+            <div class="services-row">
+                <div class="card">
+                    <div class="box">
+                        <div class="imgBx">
+                            <img src="images/Project1.png" alt="MovieMania Frontend">
+                        </div>
+                        <div class="contentBx">
+                            <div>
+                                <h2 class="projects_title">Movie Streaming Website</h2>
+                                <p>
+                                    MovieMania is a streaming website, in which one can watch movies, web series etc. This website is developed by HTML, CSS, JavaScript. The user interface of this website allows the user to create an account and subscribe with any plan. The website is fully responsive for all devices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="box">
+                        <div class="imgBx">
+                            <img src="images/Project2.jpg" alt="Marksheet Generator System">
+                        </div>
+                        <div class="contentBx">
+                            <div>
+                                <h2>Marksheet Generator System</h2>
+                                <p>
+                                    It is a java based system, through which students can view and download their mark sheet online. It provides a platform, in which teachers can give marks of the student for each subject and this system calculates total percentage of marks and checks whether the student is passed or failed in that exam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="box">
+                        <div class="imgBx">
+                            <img src="images/Project3.png" alt="">
+                        </div>
+                        <div class="contentBx">
+                            <div>
+                                <h2>Temperature Converter</h2>
+                                <p>
+                                    This website helps to convert temperature to different units like celsius, fahrenheit and kelvin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        
+    </section>
+    <section id="contact">
+        <div class="section-info" style="color:white;" data-aos="zoom-in-left">
+            <h1 class="heading">GET IN TOUCH</h1>
+            <p style="color: #79155b;">Drop a message</p>
+        </div>
+        <!--
+        <div class="contact-row">
+            <div class="contact-left-col">
+                <img src="images/b3.png">
+            </div>
+            <div class="contact-right-col">
+                <form>
+                    <h2>Connect with me!</h2>
+                    <input type="text" name="" placeholder="Name">
+                    <input type="email" name="" placeholder="E-mail">
+                    <br>
+                    <textarea name="" id="" cols="40" rows="10" placeholder="Message"></textarea>
+                    <br>
+                    <button class="c-btn"> Submit</button>
+                </form>
+            </div>
+        </div>
+        -->
+
+        <div class="container">
+            <div class="contact_content" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="left-side">
+                    <div class="phone details">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="topic">Phone</div>
+                        <div class="text-one">+91 7980662353</div>
+                        <!--<div class="text-two">Birendranagar 06</div>-->
+                    </div>
+                    <div class="whatsapp details">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div class="topic">WhatsApp</div>
+                        <div class="text-one">+91 7980662353</div>
+                        <!--<div class="text-two">+0096 3434 5678</div>-->
+                    </div>
+                    <div class="email details">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-one">preethaa.dutta@gmail.com</div>
+                        <!--<div class="text-two">info.codinglab@gmail.com</div>-->
+                    </div>
+                </div>
+    
+                <div class="middle-side">
+                    <div class="topic-text">Let's connect!</div>
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your name">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your email">
+                        </div>
+                        <div class="input-box message-box">
+                            <textarea name="" id="" cols="40" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div class="button">
+                            <!--<input type="button" value="Send Now">-->
+                            <button class="c-btn btn">Download CV</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="right-side">
+                    <!--<img class="contact_image" src="contact_section_image.jpg" alt="Contact Image">-->
+                    <img class="contact_image" src="images/about_section_image1.jpg" alt="Contact Image">
+                    <!--
+                    <div class="topic-text">Connect with me!</div>
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your name">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your email">
+                        </div>
+                        <div class="input-box message-box">
+                            <textarea name="" id="" cols="40" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div class="button">
+                            <input type="button" value="Send Now" >
+                        </div>
+                    </form>
+                    -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="footer">
+        <footer>
+            <div class="main-content head">
+                <div class="top">
+                    <center>
+                        <div class="wavy">
+                            <span style="--i:1;">T</span>
+                            <span style="--i:2;">h</span>
+                            <span style="--i:3;">a</span>
+                            <span style="--i:4;">n</span>
+                            <span style="--i:5;">k</span>
+                            <span style="--i:6;">s</span>
+                            <span style="--i:7;"> </span>
+                            <span style="--i:8;">F</span>
+                            <span style="--i:9;">o</span>
+                            <span style="--i:10;">r</span>
+                            <span style="--i:11;"> </span>
+                            <span style="--i:12;">V</span>
+                            <span style="--i:13;">i</span>
+                            <span style="--i:14;">s</span>
+                            <span style="--i:15;">i</span>
+                            <span style="--i:16;">t</span>
+                            <span style="--i:17;">i</span>
+                            <span style="--i:18;">n</span>
+                            <span style="--i:19;">g</span>
+                            <span style="--i:20;"> </span>
+                            <div class="separate">
+                            <span style="--i:21; --j:4">M</span>
+                            <span style="--i:22; --j:5">y</span>
+                            <span style="--i:23; --j:6"> </span>
+                            <span style="--i:24; --j:7">P</span>
+                            <span style="--i:25; --j:8">o</span>
+                            <span style="--i:26; --j:9">r</span>
+                            <span style="--i:27; --j:10">t</span>
+                            <span style="--i:28; --j:11">f</span>
+                            <span style="--i:29; --j:12">o</span>
+                            <span style="--i:30; --j:13">l</span>
+                            <span style="--i:31; --j:14">i</span>
+                            <span style="--i:32; --j:15">o</span>
+                            </div>
+                        </div>
+                        <div class="follow">Follow Me</div>
+                        <div class="icons">
+                            <a href="#" class="social linkedin">
+                                <svg viewBox="0 0 244.65 226.28"><path d="M35.73,81.63a24.22,24.22,0,0,1-8-18.5,24.59,24.59,0,0,1,8-18.79q8.06-7.47,20.76-7.48,12.43,0,20.48,7.48a24.59,24.59,0,0,1,8,18.79,24.22,24.22,0,0,1-8,18.5q-8,7.5-20.48,7.49Q43.79,89.12,35.73,81.63ZM80.5,105.51V263.14H32.2V105.51Z" transform="translate(-27.68 -36.86)"/><path class="cls-1" d="M255.8,121.75q16.51,17.94,16.52,49.3v92.09h-48v-85.6q0-15.81-8.19-24.57t-22-8.76q-13.84,0-22,8.76t-8.2,24.57v85.6H115.53V105.51h48.31v20.9a51.15,51.15,0,0,1,19.78-16.53,63,63,0,0,1,28-6.07Q239.27,103.81,255.8,121.75Z" transform="translate(-27.68 -36.86)"/></svg>
+                            </a>
+                            <a href="#" class="social github">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="github"><path d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"></path></svg>
+                            </a>
+                            <a href="#" class="social facebook">
+                                <svg viewBox="0 0 126.22 246"><path d="M173.6,27h35.92V70.19h-29.7c-15,2.39-14,19.79-14,19.79v29.33h47.27l-7.05,47.52H166.33V273H119.19V166.09H86.89V119.31h32.3V87.74A68.5,68.5,0,0,1,127,55.49c5.27-9.87,14-20.18,28.41-25.47A53,53,0,0,1,173.6,27Z" transform="translate(-86.89 -27)"/></svg>
+                            </a>
+                            <a href="#" class="social instagram">
+                                <svg viewBox="0 0 246.15 246.15"><path d="M201,51.5A47.49,47.49,0,0,1,248.41,99V200.88A47.49,47.49,0,0,1,201,248.32H99a47.49,47.49,0,0,1-47.44-47.44V99A47.49,47.49,0,0,1,99,51.5H201m0-24.66H99A72.11,72.11,0,0,0,26.92,99V200.88A72.12,72.12,0,0,0,99,273H201a72.12,72.12,0,0,0,72.11-72.11V99A72.11,72.11,0,0,0,201,26.84Z" transform="translate(-26.92 -26.84)"/><path class="cls-1" d="M150,124.34a25.57,25.57,0,1,1-25.57,25.57A25.6,25.6,0,0,1,150,124.34m0-24.66a50.24,50.24,0,1,0,50.23,50.23A50.23,50.23,0,0,0,150,99.68Z" transform="translate(-26.92 -26.84)"/><circle class="cls-1" cx="189.98" cy="55.33" r="13.81"/></svg>
+                            </a>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <div class="bottom">
+                <center>
+                    <span class="credit">Designed By Preethaa Dutta | |
+                    </span>
+                    <span>All Rights Reserved</span>
+                </center>
+            </div>
+        </footer>
+<!--
+        <h2>Developed by <br> Preethaa Dutta</h2>
+        <img src="images/icon.png" width="100">
+-->
+    </section>
+    <script src="js/jquery.ripples-min.js"></script>
+    <script>
+        jQuery(document).ready(function(){$('header').ripples({
+  dropRadius: 10,
+  perturbance: 0.01,
+});
+});
+    </script>
+    <script>
+        let animate= new Typed('#ani',{
+            strings:["Front End Developer","Content Writer","Tutor"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        })
+    </script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        let animat= new Typed('#ani3',{
+            strings:["Front End Developer","Web Developer","Content Writer","Tutor"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        })
+        
+        AOS.init({
+            offset: 200,/*300*/
+            duration: 800,/*1000*/
+        });
+    </script>
+    <!--<script src="js/tilt.jquery.min.js"></script>-->
+    <script src="custom.js"></script>
+
+    <!--<script>  
+    </script>-->
+</body>
+</html>
